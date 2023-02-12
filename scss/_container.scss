@@ -1,0 +1,11 @@
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+    min-height: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 1376px) {
+        max-width: 70%;
+    }
+}
