@@ -1,0 +1,41 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    color: $mainColor;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 1.5rem;
+
+    & span {
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    &__facebook {
+        background-color: #4a6ea9;
+    }
+
+    &__google {
+        background-color: #dd4b39;
+    }
+
+    &__line {
+        display: inline;
+        height: 30px;
+        border-left: 1px solid #4d4d4d;
+    }
+}
+
+.alternative-sing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    & img {
+        width: 50px;
+    }
+}
