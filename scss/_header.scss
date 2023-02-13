@@ -6,10 +6,12 @@
 
     &__container {
         margin: 0 auto;
-        max-width: 80%;
+        width: 80%;
         min-height: 20%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 10px;
 
         @media (min-width: 1376px) {
             max-width: 70%;
@@ -20,5 +22,33 @@
         text-transform: uppercase;
         color: $mainColor;
         font-weight: 800;
+    }
+
+    &__icons {
+        margin-left: auto;
+    }
+
+    &__line {
+        display: inline;
+        height: 20px;
+        border-left: 1px solid #838282;
+    }
+
+    &__exit {
+        display: flex;
+        flex-direction: row;
+        color: $mainColor;
+    }
+}
+
+.log,
+.sing {
+    color: $secondColor;
+
+    &:hover {
+        color: $secondFocusColor;
+    }
+    & span {
+        color: $mainColor;
     }
 }
