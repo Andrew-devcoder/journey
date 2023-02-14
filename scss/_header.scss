@@ -84,3 +84,72 @@
         color: $mainColor;
     }
 }
+
+.icon {
+    display: inline-block;
+    margin-left: 30px;
+    background: url("../img/css_sprites.png") no-repeat;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &__calendar {
+        height: 96px;
+        width: 96px;
+        background-position: -126px -10px;
+        zoom: 0.2;
+
+        &:hover {
+            background-position: -126px -126px;
+        }
+    }
+    &__chat {
+        width: 64px;
+        height: 64px;
+        background-position: -242px -4px;
+        zoom: 0.4;
+
+        &:hover {
+            background-position: -242px -87px;
+        }
+    }
+    &__compass {
+        width: 96px;
+        height: 96px;
+        background-position: -10px -10px;
+        zoom: 0.22;
+
+        &:hover {
+            background-position: -10px -126px;
+        }
+    }
+}
+
+// .bg-compass_white {
+//     width: 96px; height: 96px;
+//     background: url('css_sprites.png') -10px -10px;
+// }
+
+// .bg-chating_white {
+//     width: 64px; height: 64px;
+//     background: url('css_sprites.png') -242px -10px;
+// }
+
+// .bg-calendar_white {
+//     width: 96px; height: 96px;
+//     background: url('css_sprites.png') -126px -10px;
+// }
+
+// .bg-compass_green {
+//     width: 96px; height: 96px;
+//     background: url('css_sprites.png') -10px -126px;
+// }
+
+// .bg-chating_green {
+//     width: 64px; height: 64px;
+//     background: url('css_sprites.png') -242px -94px;
+// }
+
+// .bg-calendar_green {
+//     width: 96px; height: 96px;
+//     background: url('css_sprites.png') -126px -126px;
+// }
