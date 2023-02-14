@@ -32,7 +32,8 @@
     &__line {
         display: inline;
         height: 20px;
-        border-left: 1px solid #838282;
+        border-left: 1px solid;
+        color: $greyColor;
     }
 
     &__exit {
