@@ -6,9 +6,10 @@
 }
 
 .form-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     padding: 20px 60px;
     background: white;
     border-radius: 10px;
@@ -26,5 +27,106 @@
             font-size: 1.5rem;
             font-weight: 800;
         }
+    }
+}
+
+.square {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: $secondFocusColor;
+}
+
+.input-text {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid $lightGreyColor;
+    border-radius: 4px;
+
+    &:focus {
+        box-shadow: 0 4px 0.3rem 1px $greyColor;
+        border: none;
+    }
+}
+
+input[type="checkbox"] {
+    margin: 10px 5px 15px 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $lightGreyColor;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 2.3em;
+    font-size: 1.05em;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $lightGreyColor;
+    background: #fff;
+    border-radius: 0.2em;
+    transition: all 0.275s;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: "✓";
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    font-size: 1.3rem;
+    color: $secondFocusColor;
+    line-height: 0;
+    transition: all 0.2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[type="submit"] {
+    margin-top: 15px;
+    background-color: $secondColor;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $secondFocusColor;
+        cursor: pointer;
     }
 }

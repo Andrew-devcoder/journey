@@ -7,7 +7,7 @@
     border-radius: 5px;
     text-transform: capitalize;
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     & span {
         margin: 0 auto;
@@ -16,6 +16,7 @@
 
     &__facebook {
         background-color: #4a6ea9;
+        transition: filter 0.2s;
     }
 
     &__google {
@@ -27,6 +28,14 @@
         height: 30px;
         border-left: 1px solid $darkGreyColor;
     }
+
+    &__submit {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
 }
 
 .alternative-sing {
@@ -36,7 +45,7 @@
     gap: 10px;
 
     & img {
-        width: 50px;
+        width: 30px;
     }
 }
 
@@ -63,4 +72,9 @@
         transform: translate(0%, -45%);
         width: 100%;
     }
+}
+
+.button__facebook:hover,
+.button__google:hover {
+    filter: brightness(0.9);
 }

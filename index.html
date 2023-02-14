@@ -31,6 +31,7 @@
             <div class="center">
                 <div class="form-card">
                     <div class="form-card__header">
+                        <div class="square"></div>
                         <h2>Sing Up</h2>
                         <a class="log" href="#">Log In</a>
                     </div>
@@ -48,13 +49,52 @@
                     </div>
                     <div class="or"><span> or </span></div>
                     <form action="">
-                        <input type="text" width="100%" />
-                        <input type="text" />
-                        <input type="email" />
-                        <input type="password" />
-                        <input type="password" />
-                        <input type="checkbox" />
-                        <input type="submit" />
+                        <input
+                            class="input-text"
+                            type="text"
+                            placeholder="First Name"
+                            maxlength="25"
+                            required
+                            autofocus
+                        />
+                        <input
+                            class="input-text"
+                            type="text"
+                            placeholder="Last Name"
+                            maxlength="25"
+                            required
+                        />
+                        <input
+                            class="input-text"
+                            type="email"
+                            placeholder="Email"
+                            maxlength="50"
+                            required
+                        />
+                        <input
+                            class="input-text"
+                            type="password"
+                            placeholder="Choose Password"
+                            maxlength="30"
+                            required
+                        />
+                        <input
+                            class="input-text"
+                            type="password"
+                            placeholder="Confirm Password"
+                            maxlength="30"
+                            required
+                        />
+                        <input type="checkbox" id="terms" required />
+                        <label for="terms"
+                            >Agree our
+                            <a class="terms" href="#">Terms & Condition</a>
+                        </label>
+                        <input
+                            class="button button__submit"
+                            type="submit"
+                            value="Create Account"
+                        />
                     </form>
                 </div>
             </div>
